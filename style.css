@@ -1,0 +1,144 @@
+:root{
+    --primary-text: rgb(230, 22, 22);
+    --text: rgb(228, 228, 228);
+    --dark-red: rgb(97, 0, 0);
+    --card-grey: rgb(24, 24, 24);
+    --background: rgb(17, 1, 1);
+}
+
+
+body {
+    background-color: var(--background)
+}
+
+#hero {
+    
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0)), url(img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20vh 0;
+    margin-bottom: 20px;
+    
+
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h1,h2{
+    text-shadow: 0px 0px 10px var(--primary-text);
+}
+
+h1,h2,h3,h4,h5,.card-title {
+    color: var(--primary-text);
+    font-family: 'Creepster';
+}
+
+p, .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: var(--text);
+    font-family: 'Roboto';
+}
+
+.btn-danger{
+    background-color: #ff000000;
+    color: var(--primary-text);
+    padding: 5px 30px;
+
+    &:hover{
+        background-color: var(--primary-text);
+    }
+}
+
+#cards {
+    .container .card{
+        border-color: rgb(49, 49, 49);
+        border-width: 2px;
+
+        .card-body{
+            background-color: var(--card-grey);
+            border-radius: 0 0 3px 3px;
+        }
+        .row>div{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+}
+
+#accordion {
+    .accordion{
+        
+        --bs-accordion-border-color: rgb(49, 49, 49);
+        --bs-accordion-btn-bg: var(--card-grey); 
+        --bs-accordion-btn-color: var(--primary-text); 
+        
+        --bs-accordion-active-bg: var(--dark-red); 
+        --bs-accordion-active-color: #FFF; 
+        
+        
+        --bs-accordion-bg: var(--background);
+
+    }
+    
+    .accordion-button::after {
+        filter: brightness(0) invert(1);
+    }
+}
+
+
+#nested_nav {
+    .scrollspy-example-2{
+        position: relative;
+        height: 500px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scrollbar-color: var(--dark-red) var(--background);
+        scrollbar-width: thin;
+    }
+
+}
+
+#carouselExample {
+    .carousel-inner .carousel-item img {
+        object-fit: contain; /* Sigue siendo la magia que evita que se aplaste */
+        object-position: center;
+    }
+}
+
+#nested_nav .nav, 
+#nested_nav .nav-pills{
+    /* nav link */
+    --bs-nav-link-color: var(--text);
+    --bs-nav-link-hover-color: var(--dark-red);
+    /* nav pills */
+    --bs-nav-pills-link-active-color: #FFF;
+    --bs-nav-pills-link-active-bg: var(--dark-red);
+}
+
+
+#footer{
+    background-color: black;
+    
+    p{
+        color: rgb(49, 49, 49);
+    };
+
+    div{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        a{
+            color: var(--primary-text);
+            filter: 
+            drop-shadow(-1px 1px 4px var(--primary-text))
+            drop-shadow(1px -1px 2px var(--primary-text));
+        }
+    }
+    }
+
+
+
