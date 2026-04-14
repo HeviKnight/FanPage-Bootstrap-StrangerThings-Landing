@@ -29,7 +29,7 @@ Abre `index.html` en tu navegador.
    ```
 4. Crea un repositorio vacio en GitHub y conecta remoto:
    ```bash
-   git remote add origin https://github.com/TU_USUARIO/TU_REPO.git
+   git remote add origin https://github.com/HeviKnight/FanPage-Bootstrap-StrangerThings-Landing.git
    git push -u origin main
    ```
 
