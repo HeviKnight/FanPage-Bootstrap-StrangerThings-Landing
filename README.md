@@ -35,4 +35,4 @@ Abre `index.html` en tu navegador.
 
 ## Autor
 
-Agrega tu nombre aqui.
+Nicolás Hideo Vílchez Imanishi.
